@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: believethehype-walletconnect
+id: believethehype-wallet-connect
 name: WalletConnect
 tagline: Connect your Node to Nostr
 icon: https://svgur.com/i/mvA.svg
@@ -12,9 +12,9 @@ description: >-
 
   You can also add newlines!
 
-developer: Umbrel
+developer: GetAlby
 website: https://umbrel.com
-submitter: Umbrel
+submitter: Believethehype
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
