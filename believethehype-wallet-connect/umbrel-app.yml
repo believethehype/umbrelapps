@@ -4,26 +4,25 @@ name: WalletConnect
 tagline: Connect your Node to Nostr
 icon: https://svgur.com/i/mvA.svg
 category: Development
-version: "1.0.0"
+version: "0.0.1"
 port: 58000
 description: >-
-  Add your app's description here.
+  Connect your LND node with Nostr.
+  Zap directly from within supported Apps.
 
-
-  You can also add newlines!
 
 developer: GetAlby
-website: https://umbrel.com
+website: http://getalby.com/
 submitter: Believethehype
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submission: https://github.com/getAlby/nostr-wallet-connect
+repo: https://github.com/getAlby/nostr-wallet-connect
+support: https://github.com/getAlby/nostr-wallet-connect/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Test Version, do not use.
 dependencies: []
 path: ""
 defaultUsername: ""

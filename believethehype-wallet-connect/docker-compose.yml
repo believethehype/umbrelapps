@@ -17,6 +17,4 @@ services:
     
   server:
     image: ghcr.io/getalby/nostr-wallet-connect:main-ede3ee5
-    start: on-failure
-    stop_grace_period: 1m
     init: true
