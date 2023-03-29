@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: believethehype-walletconnect
+      APP_PORT: 58000
+      RELAY: "wss://relay.damus.io"
+      LN_BACKEND_TYPE: "LND"
+      LND_ADDRESS: https://$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_REST_PORT/
+      LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LND_CERT_FILE: "/lnd/tls.cert"
+      NOSTR_PRIVKEY: "768c10a096ee248d485868458068ea17e8c8ccc9665a9e5e942924c11a598e9e"
+      
+    
+  server:
+    image: ghcr.io/getalby/nostr-wallet-connect:main-ede3ee5
+    start: on-failure
+    stop_grace_period: 1m
+    init: true
