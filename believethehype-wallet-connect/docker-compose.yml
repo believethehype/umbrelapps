@@ -1,7 +1,6 @@
 version: "3.7"
 
 services:
-
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
@@ -18,3 +17,7 @@ services:
   server:
     image: ghcr.io/getalby/nostr-wallet-connect:main-ede3ee5
     init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
