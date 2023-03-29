@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: believethehype-walletconnect
-name: WalletConect
+name: WalletConnect
 tagline: Connect your Node to Nostr
 icon: https://svgur.com/i/mvA.svg
 category: Development
