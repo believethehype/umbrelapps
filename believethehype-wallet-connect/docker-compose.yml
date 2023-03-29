@@ -5,7 +5,7 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: believethehype-walletconnect
+      APP_HOST: believethehype-walletconnect_1
       APP_PORT: 58000
       RELAY: "wss://relay.damus.io"
       LN_BACKEND_TYPE: "LND"
