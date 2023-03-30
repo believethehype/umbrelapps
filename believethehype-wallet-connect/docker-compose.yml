@@ -11,7 +11,7 @@ services:
     image:  ghcr.io/believethehype/nostr-wallet-connect:believethehype-docker-multiplatform-f724c89
     init: true
     volumes:
-      - ${APP_LIGHTNING_NODE_DATA_DIR}:/root/.lnd:ro
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
       RELAY: "wss://relay.damus.io"
       LN_BACKEND_TYPE: "LND"
