@@ -15,7 +15,7 @@ services:
     environment:
       RELAY: "wss://relay.damus.io"
       LN_BACKEND_TYPE: "LND"
-      LND_ADDRESS: https://$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT/
+      LND_ADDRESS: https://$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       NOSTR_PRIVKEY: "768c10a096ee248d485868458068ea17e8c8ccc9665a9e5e942924c11a598e9e"
