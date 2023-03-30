@@ -7,7 +7,7 @@ services:
       APP_PORT: 58000
      
   server:
-    image: ghcr.io/getalby/nostr-wallet-connect:main-7c2cbca
+    image: ghcr.io/getalby/nostr-wallet-connect:main-5df99a9
     init: true
     environment:
       RELAY: "wss://relay.damus.io"
