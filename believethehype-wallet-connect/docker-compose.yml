@@ -8,7 +8,7 @@ services:
    
      
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:lnbits-support-04cdd86
+    image: ghcr.io/believethehype/nostr-wallet-connect:believethehype-docker-multiplatform-1188e97
     init: true
     volumes:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/root/.lnd:ro
