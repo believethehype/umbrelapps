@@ -4,7 +4,7 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: believethehype-wallet-connect_server_1
-      APP_PORT: 58000
+      APP_PORT: 58001
    
      
   server:
