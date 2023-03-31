@@ -20,6 +20,7 @@ services:
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       NOSTR_PRIVKEY: "768c10a096ee248d485868458068ea17e8c8ccc9665a9e5e942924c11a598e9e"
       COOKIE_SECRET: "666"
+      OAUTH_SERVER_PORT: "58000"
     restart: on-failure
     stop_grace_period: 1m
 
