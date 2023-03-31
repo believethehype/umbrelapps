@@ -8,7 +8,7 @@ services:
    
      
   server:
-    image:  ghcr.io/believethehype/nostr-wallet-connect:believethehype-docker-multiplatform-f724c89
+    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-3eda407
     init: true
     volumes:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
@@ -18,7 +18,6 @@ services:
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
-      NOSTR_PRIVKEY: "768c10a096ee248d485868458068ea17e8c8ccc9665a9e5e942924c11a598e9e"
       COOKIE_SECRET: "666"
     restart: on-failure
     stop_grace_period: 1m
