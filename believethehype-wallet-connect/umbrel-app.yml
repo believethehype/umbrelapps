@@ -2,7 +2,7 @@ manifestVersion: 1
 id: believethehype-wallet-connect
 name: WalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
-icon: https://svgshare.com/i/reU.svg
+icon: https://svgshare.com/i/rf3.svg
 category: Social
 version: "0.0.1"
 port: 58001
