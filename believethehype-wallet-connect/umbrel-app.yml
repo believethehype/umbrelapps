@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: believethehype-wallet-connect
-name: WalletConnect
+name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/rf3.svg
 category: Social
@@ -11,12 +11,12 @@ description: >-
   Zap directly from within supported Apps, like currently Amethyst
 
 
-developer: GetAlby
-website: http://getalby.com/
+developer: Alby
+website: https://github.com/getAlby/nostr-wallet-connect
 submitter: Believethehype
 submission: https://github.com/getAlby/nostr-wallet-connect
-repo: https://github.com/getAlby/nostr-wallet-connect
-support: https://github.com/getAlby/nostr-wallet-connect/issues
+repo: https://github.com/believethehype/nostr-wallet-connect/tree/umbrel
+support: https://github.com/believethehype/nostr-wallet-connect/issues
 gallery:
   - https://i.imgur.com/YHpVG2Z.png
   - https://i.imgur.com/YFjcPPz.png
