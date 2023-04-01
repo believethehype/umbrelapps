@@ -8,7 +8,7 @@ services:
    
      
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-06f8130
+    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-c89e70f
     init: true
     volumes:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro

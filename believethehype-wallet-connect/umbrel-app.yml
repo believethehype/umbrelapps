@@ -1,14 +1,14 @@
 manifestVersion: 1
 id: believethehype-wallet-connect
 name: WalletConnect
-tagline: Connect your Node to Nostr
-icon: https://svgur.com/i/mvA.svg
-category: Development
+tagline: Connect your Node to Nostr Wallet Connect
+icon: https://svgshare.com/i/rf2.svg
+category: Social
 version: "0.0.1"
-port: 58000
+port: 58001
 description: >-
   Connect your LND node with Nostr.
-  Zap directly from within supported Apps.
+  Zap directly from within supported Apps, like currently Amethyst
 
 
 developer: GetAlby
@@ -18,11 +18,11 @@ submission: https://github.com/getAlby/nostr-wallet-connect
 repo: https://github.com/getAlby/nostr-wallet-connect
 support: https://github.com/getAlby/nostr-wallet-connect/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/YHpVG2Z.png
+  - https://i.imgur.com/YFjcPPz.png
+  - https://i.imgur.com/nn1c3Lv.png
 releaseNotes: >-
-  Test Version, do not use.
+  Alpha Test for Umbrel Port of Wallet-Connect by Alby
 dependencies: []
 path: ""
 defaultUsername: ""
