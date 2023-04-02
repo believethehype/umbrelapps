@@ -1,4 +1,4 @@
-#version: "3.7"
+version: "3.7"
 services:
   app_proxy:
     environment:
@@ -18,7 +18,7 @@ services:
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
-      LNBITS_ADMIN_KEY: 123ENTERADMINKEYHERE
+      LNBITS_ADMIN_KEY: "enteradminkeyhere"
       RELAY: "wss://relay.damus.io"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
