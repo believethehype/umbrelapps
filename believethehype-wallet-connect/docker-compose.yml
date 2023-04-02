@@ -1,26 +1,26 @@
-version: "3.7"
+#version: "3.7"
 services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: believethehype-wallet-connect_server_1
       APP_PORT: 58001
-   
-     
+
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-1236794
+    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-c09f541
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
-      RELAY: "wss://relay.damus.io"
-      LN_BACKEND_TYPE: "LND"
+      LN_BACKEND_TYPE: "LND" #Change Backend to LNBITS and enter an LNBITS_ADMIN_KEY to your wallet below in order to use Lnbits #LND,LNBITS
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
+      LNBITS_ADMIN_KEY: 123ENTERADMINKEYHERE
+      RELAY: "wss://relay.damus.io"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
     restart: on-failure
     stop_grace_period: 1m
-

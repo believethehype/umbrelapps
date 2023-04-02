@@ -4,7 +4,7 @@ name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/rf3.svg
 category: Social
-version: "0.0.1"
+version: "0.0.2"
 port: 58001
 description: >-
   Connect your LND node with Nostr.
