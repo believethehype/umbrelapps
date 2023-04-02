@@ -8,9 +8,10 @@ services:
    
      
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-c89e70f
+    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-1236794
     init: true
     volumes:
+      - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
       RELAY: "wss://relay.damus.io"
@@ -18,6 +19,7 @@ services:
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
     restart: on-failure
     stop_grace_period: 1m
