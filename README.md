@@ -15,5 +15,29 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 Add https://github.com/believethehype/umbrelapps 
 to community Appstores and install Nostr-Wallet-Connect. Once you installed, open the app and scan the QR code with your Nostr Client (Amethyst is the first client that supports Wallet-Connect.) Done.
 
+
+If you want to use a LNBits Wallet instead of Umbrels dedicated LND, you can do this in terminal for now:
+
+Open Terminal
+$ ssh umbrel@umbrel.local
+
+Enter the password you use to login on the web interface
+
+$ ~/umbrel/scripts/app stop believethehype-wallet-connect
+
+$ nano ~/umbrel/app-data/believethehype-wallet-connect/docker-compose.yml
+
+ Change:  LN_BACKEND_TYPE: “LND” #LND,LNBITS
+	to LN_BACKEND_TYPE: “LNBITS” #LND,LNBITS
+
+ Change: LNBITS_ADMIN_KEY: "enteradminkeyhere"
+	to
+ 		LNBITS_ADMIN_KEY: "an actual admin key of the wallet you want to use"
+
+Exit -> Save Yes
+
+$ ~/umbrel/scripts/app start believethehype-wallet-connect
+
+
 Projects in this repo are under development, use at own risk.
 
