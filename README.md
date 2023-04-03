@@ -12,7 +12,8 @@ To use this community app store, you can add this repository through the Umbrel 
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
 
 
-Add https://github.com/believethehype/umbrelapps to communiity Appstores and install Nostr-Wallet-Connect. Once you installed, open the app and Scan the QR code with your Nostr Client (Currently Amethyst supports Wallet-Connect) Done.
+Add https://github.com/believethehype/umbrelapps 
+to community Appstores and install Nostr-Wallet-Connect. Once you installed, open the app and scan the QR code with your Nostr Client (Amethyst is the first client that supports Wallet-Connect.) Done.
 
 Projects in this repo are under development, use at own risk.
 
