@@ -23,8 +23,6 @@ $ ssh umbrel@umbrel.local
 
 Enter the password you use to login on the web interface
 
-$ ~/umbrel/scripts/app stop believethehype-wallet-connect
-
 $ nano ~/umbrel/app-data/believethehype-wallet-connect/docker-compose.yml
 
  Change:   LN_BACKEND_TYPE: “LND” #LND,LNBITS
@@ -37,7 +35,7 @@ $ nano ~/umbrel/app-data/believethehype-wallet-connect/docker-compose.yml
 
 Exit -> Save Yes
 
-$ ~/umbrel/scripts/app start believethehype-wallet-connect
+$ ~/umbrel/scripts/app restart believethehype-wallet-connect
 
 
 Projects in this repo are under development, use at own risk.
