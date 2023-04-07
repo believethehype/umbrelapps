@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-0606308
+    image: pull ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-f94db5c
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
@@ -18,7 +18,8 @@ services:
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
-      LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
+      LNBITS_UMBREL:  lnbits_web_1
+      #LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
     restart: on-failure
