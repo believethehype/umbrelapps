@@ -4,10 +4,11 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: believethehype-wallet-connect_server_1
-      APP_PORT: 58001
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:umbrel-c09f541
+    image: ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-7217a56
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
@@ -19,7 +20,6 @@ services:
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
       LNBITS_ADMIN_KEY: "enteradminkeyhere"
-      RELAY: "wss://relay.damus.io"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
     restart: on-failure

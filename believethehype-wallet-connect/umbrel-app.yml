@@ -4,7 +4,7 @@ name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/rf3.svg
 category: Social
-version: "0.0.2"
+version: "0.0.3"
 port: 58001
 description: >-
   Connect your LND node with Nostr.
@@ -22,7 +22,7 @@ gallery:
   - https://i.imgur.com/YFjcPPz.png
   - https://i.imgur.com/nn1c3Lv.png
 releaseNotes: >-
-  Alpha Test for Umbrel Port of Wallet-Connect by Alby
+  Alpha Test for Umbrel Port of Wallet-Connect by Alby, now with Albys UI
 dependencies: []
 path: ""
 defaultUsername: ""
