@@ -23,7 +23,8 @@ gallery:
   - https://i.imgur.com/nn1c3Lv.png
 releaseNotes: >-
   Alpha Test for Umbrel Port of Wallet-Connect by Alby, now with Albys UI
-dependencies: []
+dependencies:
+  - lightning
 path: ""
 defaultUsername: ""
 defaultPassword: ""
