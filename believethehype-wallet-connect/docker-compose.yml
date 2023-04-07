@@ -8,18 +8,17 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-7217a56
+    image: ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-cb79d15
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
-      LN_BACKEND_TYPE: "LND" #Change Backend to LNBITS and enter an LNBITS_ADMIN_KEY to your wallet below in order to use Lnbits #LND,LNBITS
+      LN_BACKEND_TYPE: "LND"
       LND_ADDRESS: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LND_CERT_FILE: "/lnd/tls.cert"
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       LNBITS_HOST:  http://${APP_LNBITS_IP}:3007
-      LNBITS_ADMIN_KEY: "enteradminkeyhere"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "666"
     restart: on-failure
