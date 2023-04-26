@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-f94db5c
+    image: pull ghcr.io/believethehype/nostr-wallet-connect:rpi-docker-7b43e00
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
