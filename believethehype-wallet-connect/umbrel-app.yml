@@ -4,12 +4,13 @@ name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/ub0.svg
 category: Social
-version: "0.1.0"
+version: "0.1.1"
 port: 58001
 description: >-
   Connect your LND node with Nostr.
-  Zap directly from within supported Apps, like currently Amethyst
+  Zap directly from within supported Nostr Apps.
 
+  This fork additionally supports LNBits Backend
 
 developer: Alby
 website: https://github.com/getAlby/nostr-wallet-connect
@@ -22,7 +23,9 @@ gallery:
   - https://i.imgur.com/YFjcPPz.png
   - https://i.imgur.com/nn1c3Lv.png
 releaseNotes: >-
- Updated to latest Version, added LNBits support again.
+ Updated to latest Version of Albys NWC, added LNBits support.
+
+ -
 dependencies:
   - lightning
 path: ""
