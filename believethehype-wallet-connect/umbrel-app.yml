@@ -4,7 +4,7 @@ name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/ub0.svg
 category: Social
-version: "0.1.1"
+version: "0.1.2"
 port: 58001
 description: >-
   Connect your LND node with Nostr.
@@ -23,7 +23,8 @@ gallery:
   - https://i.imgur.com/YFjcPPz.png
   - https://i.imgur.com/nn1c3Lv.png
 releaseNotes: >-
- Updated to latest Version of Albys NWC, added LNBits support.
+ - Updated to latest Version of Albys NWC, but added LNBits support.
+ - Get Balance from Lnbits supported
 
  -
 dependencies:
