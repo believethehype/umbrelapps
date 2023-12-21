@@ -4,7 +4,7 @@ name: NostrWalletConnect
 tagline: Connect your Node to Nostr Wallet Connect
 icon: https://svgshare.com/i/ub0.svg
 category: Social
-version: "0.1.5"
+version: "0.1.6"
 port: 58001
 description: >-
   Connect your LND node with Nostr.
@@ -12,7 +12,7 @@ description: >-
 
   This fork additionally supports LNBits Backend
 
-developer: Alby
+developer: Alby/Believethehype
 website: https://github.com/getAlby/nostr-wallet-connect
 submitter: Believethehype
 submission: https://github.com/getAlby/nostr-wallet-connect
