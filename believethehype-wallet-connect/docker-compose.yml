@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ghcr.io/believethehype/nostr-wallet-connect:lnbits-1a1f0d0
+    image: ghcr.io/believethehype/nostr-wallet-connect:main-dffd933
     init: true
     volumes:
       - ${APP_DATA_DIR}/data:/data
